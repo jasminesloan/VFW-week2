@@ -1,4 +1,66 @@
-<!DOCTYPE html>
+<!DOCTYPE  html>
+<html>
+	<head>
+		<meta charset="utf-8" >
+		<meta name="description" content="index page, Southern Style DJ's app" />
+		<meta name="keywords" content="html5, mobile development, Full Sail University, mixtapes" />
+		<meta name="robots" content="index, follow" />
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<title>Southern Style DJ's</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	</head>
+	<body>
+		<header><h1><img src="/Users/Jasmine/Pictures/ssdjlogolongway.gif"></h1></header>
+		<nav>
+			<a href="#" id="clear">Clear Stored Data</a>
+			<a href="#" id="displayLink">Display Data</a>
+			<a href="additem.html" id="addNew" style="display:none;">Add New Item</a>
+		</nav>
+		<form action="#" method="post" id="searchForm" />
+			<fieldset id="mixtapeFieldset">
+				<legend>Search Mixtapes</legend>
+				<span>*Fields are Required</span>
+				<ul id="errors"></ul>
+				<ul id="questions">
+					<li id="select"><label for="group">*Search By Genre:</label><br /></li>
+					<li><label for="email">*Email:</label><input type="email" id="email" placeholder="example@email.com" /></li>
+					<li><label for="pword">*Password:</label><input type="password" id="pword" /></li>
+					<li><label for="Purchase">Purchase? </label>
+						<ul>
+							<li><input type="radio" checked value="Now" id="now" name="answer" /><label for="now">Now</label> </li>
+							<li><input type="radio" value="Place in Que" id="place in que" name="answer" /><label for="place in que">Place in Que</label> </li>
+						</ul>
+					</li>
+					<li><input type="checkbox" id="yes" value="Yes" class="checkbox" /><label for="wish">Add to Wish List?</label> </li>
+					<li><label for="quantity of mixtapes">Quantity of Mixtapes</label><input type="range" min="1" max="10" id="quantity" /></li>
+					<li><label for="date">Date Purchased</label><input type="date" id="date" /></li>
+					<li><label for="suggestions">Suggestions: </label><textarea id="suggestions"></textarea></li>
+				</ul>
+			</fieldset>
+			<input type="submit" value="Save Mixtape" id="submit" /><br />
+		</form>
+		<script src="js/main.js" type="text/javascript"></script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" >
@@ -11,31 +73,32 @@
 		<title>Big Oomp Records Mixtapes</title>
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	</head>
-	<!-- Document Header -->
+	Document Header 
 <body>
 	<header>
 		<h1><img src="/Users/Jasmine/Pictures/ssdjlogolongway.gif"></h1>
 	</header>
-	<!-- Log In Information -->
+	 Log In Information 
 	<nav>
 		<a href="#" id="clear">Clear Stored Data</a>
 		<a href="#" id="displayLink">Display Data</a>
 		<a href="additem.html" id="addNew" style="display:none;">Add New Item</a>
 	</nav>
 <form action="#" method="post" id="searchForm" />
-			<fieldset>
+			<fieldset id="mixtapeFieldset">
 				<legend>Log In</legend>
-				<ul>
-					<li><label for="email">Email:</label><input type="email" id="email" placeholder="example@email.com" /></li>
-					<li><label for="pword">Password:</label><input type="password" id="pword" /></li>
-					<li><a href="#">Sign Up!</a></li>
-				</ul>
-			</fieldset>
-			<fieldset>
-				<legend>Search Mixtapes</legend>
+				<span>*Fields are Required</span>
 				<ul id="errors"></ul>
 				<ul id="questions">
-				<li id="select"><label for="group">Search By Genre</label><br /></li>
+					<li><label for="email">Email:</label><input type="email" id="email" placeholder="example@email.com" /></li>
+					<li><label for="pword">Password:</label><input type="password" id="pword" /></li>
+					<li id="select"><label for="group">Search By Genre</label><br /></li>
+					<li><a href="#">Sign Up!</a></li> 
+			
+			<fieldset> 
+				<legend>Search Mixtapes</legend>
+				
+				
 							<option value="Dirty South">Dirty South</option>
 							<option value="Gospel">Gospel</option>
 							<option value="Hip Hop">Hip Hop</option>
@@ -56,11 +119,11 @@
 							<option value="DJ Hotsauce">DJ Hotsauce</option>
 							<option value="None of These">None of These</option>
 				
-					<li><label for="Search By Mixtape Name">Search By Mixtape Name:</label><input type="mixtape" id="mixtape" placeholder="Pump Up the Volume" /></li>
-					<input type="submit" value="Submit" />
-			</fieldset>
-			<fieldset>
-				<legend>Purchase Mixtape(s)</legend>
+					<li><label for="Search By Mixtape Name">Search By Mixtape Name:</label><input type="mixtape" id="mixtape" placeholder="Pump Up the Volume" /></li> 
+					
+			
+			
+				<legend>Purchase Mixtape(s)</legend> 
 				<li>Purchase Date:
 					<ul>
 						<li>Purchase Date?:
@@ -76,9 +139,9 @@
 								<option value="1 Week">1 Week</option>
 								<option value="2 Weeks Day">2 Weeks</option>
 								<option value="3 Weeks">3 Weeks</option><option value="1 Month">1 Month</option>
-							</select>
+							</select> 
 						<li><input type="radio" value="Place in Que" id="place in que" name="option" /><label for="place in que">Place in Que</label> </li>
-						<li><label for="quantity of mixtapes">Quantity of Mixtapes</label><input type="range" id="quantity of mixtapes"</li>
+						<li><label for="quantity of mixtapes">Quantity of Mixtapes</label><input type="range" min="1" max="10" id="quantity of mixtapes"</li>
 					</ul>
 				</li>
 					<li>Add to Wish List?:
@@ -88,7 +151,7 @@
 					</ul>
 					<input type="submit" value="Submit" id="submit"/><br />
 				</li>
-			</fieldset>	
+			</fieldset>
 			<footer>
 				<nav>
 					<a href="#" title='Sign Up for Email List!'>Sign Up for Email List!</a>
@@ -99,4 +162,4 @@
 		</form>
 		<script src="js/main.js" type="text/javascript"></script>
 	</body>
-</html>
+</html> 
