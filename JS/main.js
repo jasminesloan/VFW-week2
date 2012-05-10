@@ -32,7 +32,7 @@ window.addEventListener("DOMContentLoaded", function(){
 
 	//Find value of selected radio button.
 	var getSelctedRadio = function(){
-		var radios = document.forms[0].answers;
+		var radios = document.forms[ 0 ].answer;
 		for(var i=0; i<radios.length; i++){
 			if(radios[i].checked){
 				purchaseDate = radios[i].value;
@@ -42,7 +42,7 @@ window.addEventListener("DOMContentLoaded", function(){
 
 	var getCheckboxValue =  function(){
 		if($('wishlist').checked){
-			wishListValue = $('wishlist').value;
+			wishListValue = $('yes').value;
 		}else{
 			wishListValue = "No";
 		}
@@ -80,7 +80,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		getSelectedRadio();
 		getCheckboxValue();
 		var item				= {};
-			item.group 			= ["Genre:", $('genres').value];
+			item.group 			= ["Genre:", $('groups').value];
 			item.email			= ["Email", $('email').value];
 			item.pword 			= ["Password", $('pword').value];
 			item.purchase 		= ["Purchase:", purchaseDate];
