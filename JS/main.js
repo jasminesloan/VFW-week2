@@ -143,7 +143,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	displayLink.addEventListener("click", getData);
 	var clearLink = $('clear');
 	clearLink.addEventListener("click", clearLocal); 
-	var save = $("submit");
-	save.addEventListener("click", validate);
+	var save = $("save");
+	save.addEventListener("click", storeData);
 	
 });
