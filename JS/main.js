@@ -6,6 +6,13 @@
 //Wait until DOM is ready.
 window.addEventListener("DOMContentLoaded", function(){
 
+
+	//Variable defaults
+	var mixtapeGenres = ["--Choose A Genre--", "Dirty South", "Gospel", "Hip Hop", "Miami Bass", "Old School", "Oomp Camp Albums", "R&B/Slow Jams", "Reggae"];
+	var purchaseDate;
+	var	wishListValue = "No";
+	makeCats();
+
 	//getElementsById Function
 	function $(x){
 		var theElement = document.getElementById(x);
@@ -42,7 +49,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		if($('wishlist').checked){
 			wishListValue = $('wishlist').value;
 		}else{
-			wishListValue = "No"
+			wishListValue = "No";
 		}
 	}
 	
@@ -66,11 +73,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	}
 	
 
-	//Variable defaults
-	var mixtapeGenres = ["--Choose A Genre--", "Dirty South", "Gospel", "Hip Hop", "Miami Bass", "Old School", "Oomp Camp Albums", "R&B/Slow Jams", "Reggae"];
-	var purchaseDate;
-	var	wishListValue = "No";
-	makeCats();
+	
 
 	//Set Link & Submit Click Events
 	/*
@@ -80,6 +83,5 @@ window.addEventListener("DOMContentLoaded", function(){
 	clearLink.addEventListener("click", clearLocal); */
 	var save = $('submit');
 	save.addEventListener("click", storeData); 
-
 
 });
