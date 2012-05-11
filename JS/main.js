@@ -94,7 +94,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 	//Create visiable storage
 	 var getData = function(){
-	 	console.log("inside the show function");
+	 	console.log("id");
 		toggleControls("on");
 		if(localStorage.length === 0){
 			alert("There is no data in Local Storage.");
