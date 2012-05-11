@@ -31,7 +31,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	};
 
 	//Find value of selected radio button.
-	var getSelctedRadio = function(){
+	var getSelectedRadio = function(){
 		var radios = document.forms[ 0 ].answer;
 		for(var i=0; i<radios.length; i++){
 			if(radios[i].checked){
@@ -41,7 +41,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	};
 
 	var getCheckboxValue =  function(){
-		if($('wishlist').checked){
+		if($('yes').checked){
 			wishListValue = $('yes').value;
 		}else{
 			wishListValue = "No";
@@ -94,6 +94,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 	//Create visiable storage
 	 var getData = function(){
+	 	console.log("inside the show function");
 		toggleControls("on");
 		if(localStorage.length === 0){
 			alert("There is no data in Local Storage.");
