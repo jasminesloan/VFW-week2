@@ -51,7 +51,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	var toggleControls = function(n){
 		switch(n){
 			case "on":
-				$('mixtapeForm').style.display = "none";
+				$('searchForm').style.display = "none";
 				$('clear').style.display = "inline";
 				$('displayLink').style.display = "none";
 				$('addNew').style.display = "inline";
@@ -88,7 +88,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			item.quantity 		= ["Quantity", $('quantity').value];
 			item.suggestions	= ["Suggestions", $('suggestions').value];
 		//Save data into Local Storage: Use stringify to convert our object
-		localStorage.setItem("id", JSON.stringify(item));
+		localStorage.setItem(id, JSON.stringify(item));
 		alert("Contact Saved!");
 	};
 	
@@ -115,7 +115,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			var obj = JSON.parse(value);
 			var makeSubList = document.createElement('ul');
 			makeLi.appendChild(makeSubList);
-			for(var n in odj){
+			for(var n in obj){
 				var makeSubLi = document.createElement('li');
 				makeSubList.appendChild(makeSubLi);
 				var optSubText = obj[n][0]+" "+obj[n][1];
